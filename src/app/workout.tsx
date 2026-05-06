@@ -1,10 +1,12 @@
+import WorkoutList from '@/components/WorkoutList';
 import { globalStyles } from '@/styles/global';
-import { ScrollView, Text } from 'react-native';
+import { Text, View } from 'react-native';
 
 export default function Workout() {
   return (
-    <ScrollView style={globalStyles.container}>
+    <View style={globalStyles.container}>
       <Text style={globalStyles.title}>Workout</Text>
-    </ScrollView>
+      <WorkoutList/>
+    </View>
   );
 }

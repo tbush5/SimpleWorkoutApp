@@ -25,9 +25,9 @@ export default function TabLayout() {
         }}
       />
       <Tabs.Screen
-        name='workouts'
+        name='workout'
         options={{
-          title: 'Workouts',
+          title: 'Workout',
           tabBarIcon: ({ color, size }) => (
             <Ionicons name='add-circle' size={size} color={color} />
           ),
