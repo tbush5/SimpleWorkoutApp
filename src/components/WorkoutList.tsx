@@ -1,26 +1,37 @@
-import { ScrollView, StyleSheet, Text } from 'react-native';
+import { ScrollView, StyleSheet } from 'react-native';
+import WorkoutCard from './WorkoutCard';
 
 export default function WorkoutList() {
   return (
-    <ScrollView style={styles.list}>
-      <Text style={styles.workout}>Chest</Text>
-      <Text style={styles.workout}>Leg</Text>
+    <ScrollView contentContainerStyle={styles.list}>
+      <WorkoutCard/>
+      <WorkoutCard/>
+      <WorkoutCard/>
+      <WorkoutCard/>
+      <WorkoutCard/>
+      <WorkoutCard/>
+      <WorkoutCard/>
+      <WorkoutCard/>
+      <WorkoutCard/>
+      <WorkoutCard/>
+      <WorkoutCard/>
+      <WorkoutCard/>
+      <WorkoutCard/>
+      <WorkoutCard/>
+      <WorkoutCard/>
+      <WorkoutCard/>
+      <WorkoutCard/>
+      <WorkoutCard/>
     </ScrollView>
   );
 }
 
 const styles = StyleSheet.create({
   list: {
-  },
-  workout: {
-    backgroundColor: '#16213e',
-    width: '100%',
-    borderRadius: 12,
-    borderLeftWidth: 4,
-    padding: 16,
-    color: '#ffffff',
-    fontSize: 18,
-
-    marginBottom: 10,
+    //TODO: fix it so list bottom doesn't covered up by Tabs
+    display: 'flex',
+    flexDirection: 'column',
+    gap: 10,
+    marginTop: 10,
   },
 });
